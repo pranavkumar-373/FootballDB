@@ -47,8 +47,7 @@ class LeagueAdapter(val leagues: ArrayList<LeaguesProperty>) : RecyclerView.Adap
                 // TODO: use the repository list and display it
                 var teamlistar =
                     response?.body()?.teams?.let { ArrayList(it) }!!//ENTIRE JSON model from api ARRAYLIST OF TEAM PROPERTY
-//pass to league adapter and set league name in text view
-                //.adapter=LeagueAdapter(leaguelistar)//
+
                 recyclev.adapter = TeamAdapter(teamlistar)
                 Log.e("success",teamlistar.toString());
 

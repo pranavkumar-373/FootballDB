@@ -71,7 +71,7 @@ class MainActivity : AppCompatActivity() {
 
             override fun onFailure(call: Call<League?>, t: Throwable) {
                 // the network call was a failure
-                // TODO: handle error
+
                Log.e("league list",t.localizedMessage.toString())
             }
         })
