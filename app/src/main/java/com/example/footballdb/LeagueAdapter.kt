@@ -56,7 +56,7 @@ class LeagueAdapter(val leagues: ArrayList<LeaguesProperty>) : RecyclerView.Adap
 
             override fun onFailure(call: Call<TeamObjects?>, t: Throwable) {
                 // the network call was a failure
-                // TODO: handle error
+
                 Log.e("team list",t.localizedMessage.toString())
             }
         })
