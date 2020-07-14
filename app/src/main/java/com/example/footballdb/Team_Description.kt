@@ -18,7 +18,7 @@ class Team_Description() : AppCompatActivity()  {
 
         setContentView(R.layout.team_desc)
         teamdesc.text=teamdescc
-
+        teamdesc.movementMethod= ScrollingMovementMethod()
         Glide.with(this)
             .load(jerseypic)
             .into(jerseyimageView)
